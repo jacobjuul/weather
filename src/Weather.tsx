@@ -23,7 +23,7 @@ const Weather = (props: any) => {
                     console.log(data);
 
                     fetch(
-                        `https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&units=metric&appid=4c4f0b1876954338598a7be96c66527b`,
+                        `https://api.openweathermap.org/data/3.0/weather?lat=${data[0].lat}&lon=${data[0].lon}&units=metric&appid=4c4f0b1876954338598a7be96c66527b`,
                     )
                         .then((res) => res.json())
                         .then((data) => {
