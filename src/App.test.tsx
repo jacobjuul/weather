@@ -10,10 +10,12 @@ describe('App', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('Checks Input Functionality', () => {
+    it('Checks Input Functionality', async () => {
+        const user = userEvent.setup();
         render(<App />);
 
-        userEvent.type(screen.getByRole('search'), 'Copenhagen');
-        expect(screen.getByRole('search')).toHaveValue('Copenhagen');
+        const searchInput = screen.getByRole('search');
+        await user.type(searchInput, 'Copenhagen');
+        expect(searchInput).toHaveValue('Copenhagen');
     });
 });
