@@ -1,5 +1,5 @@
 # React + TypeScript + Vite
-
+https://codesandbox.io/p/github/jacobjuul/weather/main?import=true&workspaceId=ws_CuxfS3zSPwezTvtChc5GFV
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
